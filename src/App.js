@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Routes/Home';
+import Sobre from './Routes/Sobre';
+import Servicios from './Routes/Servicios';
+import Peluches from './Routes/Peluches';
+import VGames from './Routes/VideoJuegos';
+import Cartas from './Routes/Cartas';
+import Quienes from './Routes/Quien';
+import Nuestrosvalores from './Routes/Nuestrosvalores';
+import Layout from './Components/Layout';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="sobre" element={<Sobre />} />
+          <Route path="servicios" element={<Servicios />} />
+          <Route path="peluches" element={<Peluches />} />
+          <Route path="vgames" element={<VGames />} />
+          <Route path="cartas" element={<Cartas />} />
+          <Route path="quienes-somos" element={<Quienes />} />
+          <Route path="nuestro-valores" element={<Nuestrosvalores />} />
+          <Route path="*" element={<p>¡Elemento no encontrado!</p>} />
+        </Route>
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
