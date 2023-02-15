@@ -10,7 +10,8 @@ body {
 
 header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #212529;
+  color: white;
+  background-color: #333;
 }
 
 .nav-area {
@@ -69,7 +70,8 @@ button span {
 
 .menu-items a:hover,
 .menu-items button:hover {
-  background-color: #f2f2f2;
+  background-color: #573f3f;
+  border-radius: 5px;
 }
 
 .arrow::after {
@@ -93,7 +95,7 @@ button span {
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  background-color: #fff;
+  background-color: #333;
   border-radius: 0.5rem;
   display: none;
 }
@@ -123,4 +125,20 @@ button span {
 .content a {
   color: #cc3852;
   margin-right: 10px;
+}
+img{
+  width: 40px;
+}
+
+h2 {
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding-left: 2rem;
+}
+span{
+  font-weight: bold;
+  color: darkred;
+  padding-right: .5rem;
 }
