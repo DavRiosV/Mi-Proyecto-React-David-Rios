@@ -1,0 +1,12 @@
+.pokelist{
+    float: left;
+    width: 220px;
+    height: 323px;
+    border: 1px solid #cccccc;
+    margin: 0px 5px 10px 7px;
+    background-color: #ffffff;
+}
+
+.pokelist p{
+    margin: 0;
+}

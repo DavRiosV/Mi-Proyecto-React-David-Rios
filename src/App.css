@@ -6,6 +6,8 @@
 
 body {
   font-family: sans-serif;
+  background-image: url('./fondo.jpg');
+  background-size: cover;
 }
 
 header {
@@ -116,6 +118,7 @@ button span {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 20px;
+  background-color: #3333335e;
 }
 
 .content h2 {
@@ -134,14 +137,59 @@ h2 {
   color: white;
   font-weight: 400;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-left: 2rem;
 }
-span{
+header .nombreEmp{
   font-weight: bold;
   color: darkred;
-  padding-right: .5rem;
+  margin: 1rem;
 }
 .gif{
   width: 500px;
+  position: relative;
+  left: 20rem;
+}
+header .cart{
+  position: relative;
+  cursor:  pointer;
+} header .itemTotal{
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: darkred;
+}
+header .cart:hover{
+  background-color: #573f3f;
+  border-radius: 5px;
+  /* padding: 0.5rem 0.5rem; */
+}
+
+@media only screen and (max-width:600px){
+  .nav-area li{
+    display: none;
+  }
+  .nav-area .cart{
+  padding-left: 12rem;
+  }
+  body img{
+    background-size: auto;
+  }
+}
+.construcion {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

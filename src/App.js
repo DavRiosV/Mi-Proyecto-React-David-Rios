@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Routes/Home';
 import Sobre from './Routes/Sobre';
-import Servicios from './Routes/Servicios';
+import Productos from './Routes/Productos';
 import Peluches from './Routes/Peluches';
 import VGames from './Routes/VideoJuegos';
 import Cartas from './Routes/Cartas';
@@ -16,8 +16,8 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
-          <Route path="servicios" element={<Servicios />} />
-          <Route path="peluches" element={<Peluches />} />
+          <Route path="productos" element={<Productos />} />
+          <Route path="Peluches" element={<Peluches />} />
           <Route path="vgames" element={<VGames />} />
           <Route path="cartas" element={<Cartas />} />
           <Route path="quienes-somos" element={<Quienes />} />

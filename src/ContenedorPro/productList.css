@@ -1,0 +1,21 @@
+.productList{
+    display: block;
+    background: #efefef;
+}
+
+.nombre_producto{
+    font-size: 14px;
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    font-weight: bold;
+    margin: 5px 5px 5px 5px;
+    height: 35px;
+}
+.precio{
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: right;
+    color: #000000;
+    float: right;
+}

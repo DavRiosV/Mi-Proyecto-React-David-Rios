@@ -6,12 +6,12 @@ export const menuItems = [
         url: '/',
         },
         {
-        title: 'Servicios',
-        url: '/servicios',
+        title: 'Productos',
+        url: '/productos',
         submenu: [
             {
             title: 'Peluches',
-            url: 'peluches',
+            url: 'Peluches',
             },
             {
             title: 'Video Juegos',
@@ -36,9 +36,5 @@ export const menuItems = [
             url: 'nuestro-valores',
             },
         ],
-        },
-        {
-            title: <FaShoppingCart/>,
-            url: '/carrito',
         },
     ];
