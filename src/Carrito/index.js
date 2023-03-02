@@ -53,7 +53,7 @@ return (
         <div onClick={tooglefalse} className="carrito__close">
         <box-icon name="x"></box-icon>
         </div>
-        <h2>Su Carrito</h2>
+        <h2 className="tituloCarrito">Su Carrito</h2>
         <div className="carrito__center">
 					{
 					carrito.length === 0 ? <h2 style={{textAlign: "center", fontSize: "3rem"}}>Su carrito esta vacio</h2> :<>
