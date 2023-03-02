@@ -8,10 +8,16 @@ import Cartas from './Routes/Cartas';
 import Quienes from './Routes/Quien';
 import Nuestrosvalores from './Routes/Nuestrosvalores';
 import Layout from './Components/Layout';
+import 'boxicons';
+import { DataProvider } from './context/DataProvider';
+
 
 const App = () => {
   return (
+    <DataProvider>
+
     <>
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -26,6 +32,7 @@ const App = () => {
         </Route>
       </Routes>
     </>
+    </DataProvider>
   );
 };
 

@@ -1,0 +1,33 @@
+
+.btnBuy{
+    float: left;
+    width: 156px;
+    height: 32px;
+    background-color: darkred;
+    text-align: Center;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    line-height: 26px;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+.btnVista{
+    float: inline-end;
+    width: 62px;
+    height: 31px;
+    background-color: #f2f2f2;
+    text-align: Center;
+    color: #666666;
+    font-size: 10px;
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    line-height: 26px;
+    font-weight: normal;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.btnBuy:hover{
+    background-color: #c72626;
+}

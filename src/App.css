@@ -175,6 +175,12 @@ header .cart:hover{
   border-radius: 5px;
   /* padding: 0.5rem 0.5rem; */
 }
+.construcion {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media only screen and (max-width:600px){
   .nav-area li{
@@ -186,10 +192,4 @@ header .cart:hover{
   body img{
     background-size: auto;
   }
-}
-.construcion {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

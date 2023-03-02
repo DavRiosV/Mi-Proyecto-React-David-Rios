@@ -1,9 +1,9 @@
 import Navbar from './Navbar';
-
 import { Link } from 'react-router-dom';
-import Carrito from './carrito';
+import Carrito from './Carrito';
 
 const Header = () => {
+
   return (
     <header>
       <div className="nav-area">
@@ -11,7 +11,6 @@ const Header = () => {
         <h2><span className='nombreEmp'>R&A</span> Ltda</h2>
         <Navbar />
         <Carrito/>
-
       </div>
     </header>
   );
