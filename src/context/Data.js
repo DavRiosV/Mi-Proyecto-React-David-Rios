@@ -17,6 +17,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-02",
@@ -33,6 +34,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-03",
@@ -51,6 +53,7 @@ const Data = {
                 TipoElemental: "Trueno",
             },
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-04",
@@ -67,6 +70,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-05",
@@ -83,6 +87,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-06",
@@ -99,6 +104,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-07",
@@ -115,6 +121,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-08",
@@ -131,6 +138,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-09",
@@ -147,6 +155,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-10",
@@ -163,6 +172,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-11",
@@ -179,6 +189,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-12",
@@ -195,6 +206,7 @@ const Data = {
             },
             oferta: false,
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-13",
@@ -212,6 +224,7 @@ const Data = {
                 TipoElemental: "Normal"
             },
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-14",
@@ -229,6 +242,7 @@ const Data = {
                 TipoElemental: "Normal"
             },
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-15",
@@ -246,6 +260,7 @@ const Data = {
                 TipoElemental: "Normal"
             },
             cantidad: 1,
+            category: "Peluches",
         },
         {
             id: "Peluche-16",
@@ -263,6 +278,7 @@ const Data = {
                 TipoElemental: "Normal"
             },
             cantidad: 1,
+            category: "Peluches",
         },
         // Juegos
         {
@@ -277,6 +293,7 @@ const Data = {
             descripcion: "VideoJuegos Nintendo Switch",
             oferta: false,
             cantidad: 1,
+            category: "Videojuegos",
         },
         {
             id: "Juego-02",
@@ -290,6 +307,7 @@ const Data = {
             descripcion: "VideoJuegos Nintendo Switch",
             oferta: false,
             cantidad: 1,
+            category: "Videojuegos",
         },
         {
             id: "Juego-03",
@@ -303,6 +321,7 @@ const Data = {
             descripcion: "VideoJuegos Nintendo Switch",
             oferta: false,
             cantidad: 1,
+            category: "Videojuegos",
         },
         {
             id: "Juego-04",
@@ -317,6 +336,7 @@ const Data = {
             descuento: 15,
             descripcion: "VideoJuegos diamante - perla Nintendo Switch",
             cantidad: 1,
+            category: "Videojuegos",
         },
         {
             id: "Juego-05",
@@ -330,6 +350,7 @@ const Data = {
             descripcion: "VideoJuegos scarlet NSW",
             oferta: false,
             cantidad: 1,
+            category: "Videojuegos",
         },
         {
             id: "Juego-06",
@@ -343,6 +364,7 @@ const Data = {
             descripcion: "VideoJuegos violet Nintendo Switch",
             oferta: false,
             cantidad: 1,
+            category: "Videojuegos",
         },
     
         // cartas TCG
@@ -359,6 +381,7 @@ const Data = {
             oferta: true,
             descuento: 15,
             cantidad: 1,
+            category: "cartas",
         },
         {
             id: "Cartas-02",
@@ -372,6 +395,7 @@ const Data = {
             descripcion: "Pokémon TCG",
             oferta: false,
             cantidad: 1,
+            category: "cartas",
         },
         {
             id: "Cartas-03",
@@ -385,6 +409,7 @@ const Data = {
             descripcion: "Pokémon TCG",
             oferta: false,
             cantidad: 1,
+            category: "cartas",
         },
         {
             id: "Cartas-04",
@@ -398,6 +423,7 @@ const Data = {
             descripcion: "Pokémon TCG",
             oferta: false,
             cantidad: 1,
+            category: "cartas",
         },
         {
             id: "Cartas-05",
@@ -412,6 +438,7 @@ const Data = {
             oferta: true,
             descuento: 15,
             cantidad: 1,
+            category: "cartas",
         }
     ]
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-// import { FaShoppingCart } from "react-icons/fa";
 import { DataContext
 } from '../context/DataProvider';
 import { useContext } from 'react';

@@ -92,10 +92,10 @@ return (
         </div>
 
         <div className="carrito__footer">
-          <h3>Total: ${total}</h3>
-          <button className="pay">PAGAR</button>
+        <h3>Total: ${total}</h3>
+        <button className="pay">PAGAR</button>
         </div>
-      </div>
     </div>
-  );
+    </div>
+);
 };

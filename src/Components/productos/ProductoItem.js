@@ -1,9 +1,9 @@
 import React, {useContext} from "react";
 import { Link } from "react-router-dom";
-import { DataContext } from "../context/DataProvider";
-import "./productList.css"
+import { DataContext } from "../../context/DataProvider";
+import "../../ContenedorPro/productList.css"
 
-export const ProductoItem = ({titulo, imagen, categoria, precio, id}) => {
+export const ProductoItem = ({titulo, imagen, category, precio, id}) => {
 
 const value = useContext(DataContext);
 const addCarrito = value.addCarrito;
@@ -20,7 +20,7 @@ return (
     </div>
     </Link>
     <div className="producto__footer">
-        <p>{categoria}</p>
+        <p className="category">{category}</p>
         <p className="precio">${precio} </p>
     </div>
     <div className="buttons">

@@ -10,19 +10,21 @@ import Nuestrosvalores from './Routes/Nuestrosvalores';
 import Layout from './Components/Layout';
 import 'boxicons';
 import { DataProvider } from './context/DataProvider';
+import { ProductosList } from './Components/productos/ProductosList';
+import { ProductosDetalles } from './Components/productos/ProductosDetalles';
 
 
 const App = () => {
   return (
     <DataProvider>
-
     <>
-
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
-          <Route path="productos" element={<Productos />} />
+          <Route path="productost" element={<Productos />} />
+          <Route path="/productos" exact component={ProductosList}/>
+          <Route path="/producto/:id" exact component={ProductosDetalles}/>
           <Route path="Peluches" element={<Peluches />} />
           <Route path="vgames" element={<VGames />} />
           <Route path="cartas" element={<Cartas />} />

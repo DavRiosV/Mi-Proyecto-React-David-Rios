@@ -1,12 +1,11 @@
 import React, {useContext} from 'react'
-import { DataContext } from '../context/DataProvider';
-import { ProductoItem } from '../ContenedorPro/ProductoItem';
-import "../ContenedorPro/productList.css"
+import { DataContext } from '../../context/DataProvider';
+import { ProductoItem } from './ProductoItem';
+import "../../ContenedorPro/productList.css"
 
 export const ProductosList = () => {
 	const value = useContext(DataContext)
 	const [productos] = value.productos;
-	console.log(productos)
     return (
 			<>
 			<h1 className="produ">PRODUCTOS</h1>
@@ -17,7 +16,7 @@ export const ProductosList = () => {
 									key={producto.id}
 									titulo={producto.titulo}
 									imagen={producto.imagen}
-									category={producto.categoria}
+									category={producto.category}
 									precio={producto.precio}
 									id={producto.id}
 								/>

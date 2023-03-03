@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Cart } from "../Carrito";
-import { ProductosList } from "../Components/ProductosList";
+import { ProductosList } from "../Components/productos/ProductosList";
 
 
 const Home = () => {

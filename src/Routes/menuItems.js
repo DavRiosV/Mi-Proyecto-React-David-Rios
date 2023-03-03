@@ -1,5 +1,3 @@
-
-import { FaShoppingCart } from "react-icons/fa";
 export const menuItems = [
     {
         title: 'Home',
@@ -7,7 +5,7 @@ export const menuItems = [
         },
         {
         title: 'Productos',
-        url: '/productos',
+        url: '/productost',
         submenu: [
             {
             title: 'Peluches',

@@ -23,7 +23,7 @@
 }
 .imgProductos{
     margin-top: 0px;
-    width: 173px;
+    width: 157px;
     position: relative;
     left: 1rem;
     cursor: pointer;
@@ -62,8 +62,8 @@
 
 .btnBuy{
     float: left;
-    width: 156px;
-    height: 34px;
+    width: 155px;
+    height: 32px;
     background-color: darkred;
     text-align: Center;
     color: #ffffff;
@@ -111,4 +111,7 @@
 
 .pokelist p{
     margin: 0;
+}
+.category{
+    visibility: hidden;
 }
