@@ -10,8 +10,9 @@ import Nuestrosvalores from './Routes/Nuestrosvalores';
 import Layout from './Components/Layout';
 import 'boxicons';
 import { DataProvider } from './context/DataProvider';
-import { ProductosList } from './Components/productos/ProductosList';
-import { ProductosDetalles } from './Components/productos/ProductosDetalles';
+import { ProductosList } from './Routes/ProductosList';
+import { ProductosDetalles } from './Routes/ProductosDetalles';
+import ItemById from './Components/itemById/ItemById';
 
 
 const App = () => {
@@ -23,8 +24,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="productost" element={<Productos />} />
-          <Route path="/productos" exact component={ProductosList}/>
-          <Route path="/producto/:id" exact component={ProductosDetalles}/>
+          <Route path="productos" element={<ProductosList/>}/>
+          <Route path="producto/:id" element={<ProductosDetalles/>}/>
           <Route path="Peluches" element={<Peluches />} />
           <Route path="vgames" element={<VGames />} />
           <Route path="cartas" element={<Cartas />} />
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="*" element={<p>¡Elemento no encontrado!</p>} />
         </Route>
       </Routes>
+
     </>
     </DataProvider>
   );
