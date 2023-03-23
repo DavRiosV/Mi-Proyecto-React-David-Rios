@@ -175,11 +175,19 @@ header .cart:hover{
   border-radius: 5px;
   /* padding: 0.5rem 0.5rem; */
 }
-.construcion {
-  color: white;
+.productosPage{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.plushes{
+  z-index: 1;
+}
+.imgPages{
+  width: 300px;
+}
+.linkPages{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
 }
 
 @media only screen and (max-width:600px){

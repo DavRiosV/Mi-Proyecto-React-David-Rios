@@ -27,6 +27,7 @@ export const DataProvider = (props) => {
 		})
 		if(check){
 			const data = productos.filter(producto =>{
+				console.log(producto)
 				return producto.id === id
 			})
 			setCarrito([...carrito, ...data])

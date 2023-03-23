@@ -1,6 +1,6 @@
 
 import { Cart } from "../Carrito";
-import { ProductosList } from "../Components/productos/ProductosList";
+import { ProductosList } from "../Routes/ProductosList";
 import ItemList from "../Components/itemById/ItemList";
 
 const Home = () => {
