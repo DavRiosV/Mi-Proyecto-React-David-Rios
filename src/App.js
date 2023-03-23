@@ -12,7 +12,6 @@ import 'boxicons';
 import { DataProvider } from './context/DataProvider';
 import { ProductosList } from './Routes/ProductosList';
 import { ProductosDetalles } from './Routes/ProductosDetalles';
-import ItemById from './Components/itemById/ItemById';
 
 
 const App = () => {

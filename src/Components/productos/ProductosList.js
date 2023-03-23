@@ -3,6 +3,7 @@ import { DataContext } from '../../context/DataProvider';
 import { ProductoItem } from './ProductoItem';
 import "../../ContenedorPro/productList.css"
 
+
 export const ProductosList = () => {
 	const value = useContext(DataContext)
 	const [productos] = value.productos;

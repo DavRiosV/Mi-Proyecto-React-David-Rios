@@ -3,6 +3,7 @@ import { DataContext } from '../context/DataProvider';
 import { useParams } from "react-router-dom";
 import { ProductoItem } from '../Components/productos/ProductoItem';
 import "../Components/productos/ProductosDetalles.css";
+import { Cart } from '../Carrito';
 
 export const ProductosDetalles = () => {
   const value = useContext(DataContext);
@@ -15,10 +16,8 @@ export const ProductosDetalles = () => {
   let item = 0;
 
   useEffect(() =>{
-    console.log('re-renders' , params.id)
     item=0;
     productos.forEach(producto =>{
-      console.log(producto.id, params.id)
       if(producto.id === params.id){
         setDetalle(producto)
         setUrl(0)
@@ -26,13 +25,11 @@ export const ProductosDetalles = () => {
     })
   },[params.id, productos])
 
-  console.log(url)
 
   useEffect(() =>{
     const values = `${detalle.imagen}${url}${detalle.imagen}`;
     setImages(values) 
   },[url, params.id])
-    console.log(url)
   if(detalle.length < 1) return null;
 
   return (
@@ -77,8 +74,8 @@ export const ProductosDetalles = () => {
         
         })
       }
-     
     </div>
+    <Cart/>
     </>
   )
 }
