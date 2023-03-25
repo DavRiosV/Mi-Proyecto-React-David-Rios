@@ -129,7 +129,7 @@ button span {
   color: #cc3852;
   margin-right: 10px;
 }
-img{
+.Logo{
   width: 40px;
 }
 
@@ -173,7 +173,6 @@ header .cart{
 header .cart:hover{
   background-color: #573f3f;
   border-radius: 5px;
-  /* padding: 0.5rem 0.5rem; */
 }
 .productosPage{
   display: grid;
@@ -190,7 +189,6 @@ header .cart:hover{
   display: flex;
   align-items: center;
 }
-
 @media only screen and (max-width:600px){
   .nav-area li{
     display: none;

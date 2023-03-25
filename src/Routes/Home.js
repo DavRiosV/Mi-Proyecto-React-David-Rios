@@ -9,10 +9,9 @@ const Home = () => {
     <div>
         <Cart/>      
     <div>
-    
-    <ProductosList/> 
+        <ProductosList/> 
     </div> 
-    <ContactForm />
+        <ContactForm/>
     </div>
         )
     ;

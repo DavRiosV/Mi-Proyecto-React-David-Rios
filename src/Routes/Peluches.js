@@ -16,9 +16,9 @@ const Peluches = () => {
     <>
         <div className="productos">
             {
-							productos.map(producto =>(
+							productos.map(producto  => (
 								<ProductoItem 
-									key={producto.categoryId.id}
+									key={producto.peluches}
 									titulo={producto.titulo}
 									imagen={producto.imagen}
 									category={producto.category}
