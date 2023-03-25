@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { DataContext } from "../context/DataProvider";
-import "./index.css"
+import { IoMdClose, IoMdArrowDropup, IoMdArrowDropdown,IoIosTrash } from "react-icons/io";
+import "./index.css";
 
 export const Cart = () => {
 const value = useContext(DataContext);
@@ -50,7 +51,7 @@ return (
     <div className={show1}>
     <div className={show2}>
         <div onClick={tooglefalse} className="carrito__close">
-        <box-icon name="x"></box-icon>
+        <IoMdClose className="ion-icon"/>
         </div>
         <h2 className="tituloCarrito">Su Carrito</h2>
         <div className="carrito__center">
@@ -65,22 +66,22 @@ return (
                 <p className="price">${producto.precio}</p>
             </div>
             <div>
-								<box-icon 
-									onClick={() => increase(producto.id)} name="up-arrow" 
-									type="solid"
-									/>
+				<IoMdArrowDropup
+				onClick={() => increase(producto.id)} className="arrow" 
+				type="solid"
+				/>
                 <p className="cantidad">{producto.cantidad}</p>
-								<box-icon 
+								<IoMdArrowDropdown
 									onClick={() => reduce(producto.id)} 
-									name="down-arrow" 
+									className="arrow" 
 									type="solid" 
-									/>
+								/>
             </div>
 							<div 
 							onClick={() => removeProducto(producto.id)} 
 							className="remove__item"
 							>
-                <box-icon name="trash" />
+                <IoIosTrash className="trash" />
             </div>
             </div>
 					))

@@ -8,7 +8,6 @@ import Cartas from './Routes/Cartas';
 import Quienes from './Routes/Quien';
 import Nuestrosvalores from './Routes/Nuestrosvalores';
 import Layout from './Components/Layout';
-import 'boxicons';
 import { DataProvider } from './context/DataProvider';
 import { ProductosList } from './Routes/ProductosList';
 import { ProductosDetalles } from './Routes/ProductosDetalles';

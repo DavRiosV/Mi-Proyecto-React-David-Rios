@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import { menuItems } from '../Routes/menuItems';
 import MenuItems from './MenuItems';
 

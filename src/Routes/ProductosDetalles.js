@@ -27,7 +27,7 @@ export const ProductosDetalles = () => {
 
 
   useEffect(() =>{
-    const values = `${detalle.imagen}${url}${detalle.imagen}`;
+    const values = `${url}`;
     setImages(values) 
   },[url, params.id])
   if(detalle.length < 1) return null;
@@ -58,7 +58,7 @@ export const ProductosDetalles = () => {
     <h2 className="relacionados">Productos relacionados</h2>
     <div className="productos">
       {
-        productos.map((producto)=>{
+        productos.map((producto) => {
           if((item < 6)&&(detalle.category === producto.category)){
             item++;
           return <ProductoItem 
@@ -70,8 +70,6 @@ export const ProductosDetalles = () => {
           id={producto.id}
           />
           }
-          
-        
         })
       }
     </div>

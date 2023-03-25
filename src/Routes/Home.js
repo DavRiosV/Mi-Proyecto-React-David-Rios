@@ -1,7 +1,7 @@
 
 import { Cart } from "../Carrito";
 import { ProductosList } from "../Routes/ProductosList";
-import ItemList from "../Components/itemById/ItemList";
+import ContactForm from "../Components/ContactFormEdit/ContactFormEdit";
 
 const Home = () => {
     return (
@@ -12,10 +12,7 @@ const Home = () => {
     
     <ProductosList/> 
     </div> 
-    <div>
-    <ItemList/>
-    </div>
-
+    <ContactForm />
     </div>
         )
     ;

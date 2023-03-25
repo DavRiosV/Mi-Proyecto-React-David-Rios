@@ -1,7 +1,7 @@
 import React from 'react'
-import { DataContext
-} from '../context/DataProvider';
+import { DataContext} from '../context/DataProvider';
 import { useContext } from 'react';
+import { IoIosCart } from "react-icons/io";
 
 function Carrito() {
     const value = useContext(DataContext);
@@ -15,7 +15,7 @@ function Carrito() {
     } 
     return (
     <div className='cart' onClick={toogleMenu}>
-        <box-icon name="cart"></box-icon>
+        <IoIosCart className="cartIcon"></IoIosCart>
         <span className='itemTotal'>{carrito.length}</span>
     </div>
 )
