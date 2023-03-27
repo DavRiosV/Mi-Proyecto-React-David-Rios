@@ -5,28 +5,30 @@ import { ProductoItem } from '../Components/productos/ProductoItem';
 
 const Peluches = () => {
 
-    const value = useContext(DataContext)
+    const value = useContext(DataContext);
 	const [productos] = value.productos;
-    return (
-
-        
-        <div>
+	const data = productos.filter(producto =>{
+		return producto.categoryId === 1
+	})
+	console.log(JSON.stringify(productos))
+    return (	
+		<div>
     <h2>Peluches</h2>;
     <Link path="Peluches"></Link>
     <>
         <div className="productos">
             {
-							productos.map(producto  => (
-								<ProductoItem 
-									key={producto.peluches}
-									titulo={producto.titulo}
-									imagen={producto.imagen}
-									category={producto.category}
-									precio={producto.precio}
-									id={producto.id}
-								/>
-							))
-						}					
+				data.map(producto  =>  (
+					<ProductoItem 
+					key={producto.id}
+					titulo={producto.titulo}
+					imagen={producto.imagen}
+					category={producto.category}
+					precio={producto.precio}
+					id={producto.id}
+					/>
+					))
+				}					
         </div>
 				</>
     </div>

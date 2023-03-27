@@ -1,4 +1,40 @@
-# Getting Started with Create React App
+# Proyecto Ecommerce react js - Coderhouse
+
+En este repositorio mostrare mi proyecto que consiste en un Ecommerce con tematica de Pokemon que trabaje a lo largo de mi cursada en [Coderhouse](https://www.coderhouse.cl/) aplicando los conocimientos adquiridos durante esta misma.
+
+![Pokemon](https://images.wikidexcdn.net/mwuploads/wikidex/8/87/latest/20210226185630/Pok%C3%A9_Ball_%28Hisui%29_%28Ilustraci%C3%B3n%29.png)
+
+![Coderlogo](https://www.coderhouse.cl/imgs/ch.svg)
+
+En Coderhouse durante esta cursada aprendi:
+
+- Como trabajar con React.
+- JSX y transpiling. 
+- Componentes.
+- Promesas, asincronias y map.
+- Como consumir API'S con react.
+- Routing y navegación.
+- Eventos.
+- Context.
+- Rendering.
+- Como trabajar con Firebase.
+
+Tambien trabaje con algunos paquetes de Node **npm** 
+
+![npm](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAflBMVEX////LODfLNjXOQkHRUVD66+vz2NjJLi3HHBv78vLJJybIISDdj47JKindiorz3NvmqqrUYF/9+PjZdXXpurrlpKTaenrx0tLSV1bKMjHYbWz89fXdjo7z2djWaGjmpqbcgYDGEg/osrLYcXHux8fjnZ3PRkbQTUzGDQvFAADX002WAAACmElEQVR4nO3d3VbaQBhGYfJnCBhToATTaBtrEb3/G6yH832shjW8Kdqyn9PR+dnCgbNYYTYDAAAAAAAAAAAAAODqNWWGQHIbl2+eIlA/xOVbJgiUka8+8hnkk5BPQj4J+STkk5BPQj4J+STkk4j5pH8Yk+nmmnCqqKW0fNo+0unmmnKqEwuZpaR86f3u8eZczW0ZztW1Z8/0Ptf3zhxq3wiTja/0YHYt5etW66jftr7UZiN3wlSzjcm3+KrMNe6H3TX54mzJpyCfhHwS8knIJyGfhHwS8knIJyGfhHwS8kkumG+7aQObnR2NytffhVO1z5UdjspXmKnawR1isMONO9Pl8rWLMjB3h4rKV+V1ONdTYYej8jVdOFWZuEMkZrR2f/RL5ivHDhWX797c8s6lfObGOM3cITIz2pHPH4J85CMf+chHPvKR7wj5/MrkIx/5yEc+8pGPfOQj3xHy+ZXJRz7ykY985CMf+chHviPk8yt/WL687ALaZ1yuL18/fAutyPdhn+8jn0c+8nnk8yuTj3zkc8hHPo98fmXykY98DvnI5w3/ZL6XS+VLV0U1pjWHqn/24eB6G5VvdKH189hKTr9z+ewhevvqS3/ZXe+ne4ZVki7nY8yZ3k9lR029k9elL0/nr+Qs3PPW3CHc6MKOmnqf5/GHcZf1nwX5JOSTkE9CPgn5JOSTkE9CPgn5JOSTkE8Sm2/K72mzG4nLN+E2FHVkviyfjLlXS8qhGPOYm59OD9PtQ3HYR+Vbj54xSmVvztIsP/xZfrBvmuXNdBuRVKeb/SX2tvnU29Hm858uvUIuXxTykU9DPgn5JOSTkE9CPgn5JOSTkE9CPgn5JNvX5dneyFfsBMp3DQAAAAAAAAAAAAAAAOC/8Bs2GtCNGMw03gAAAABJRU5ErkJggg==)
+
+Tales como: 
+```sh
+- npm install react-icons --save
+- npm i react-router-dom
+- npm install firebase
+```
+| Nombre del componente | Descripción |
+| ---------------------| ----------- |
+| Carpeta Carrito - JS index | Desplegación del carrito de compras |
+| Carpeta productos | Dentro de esta carpeta encontraremos distintos componentes que nos ayudaran a tener una web mas estilizada. Dentro podemos encontrar los componentes del navMenu y sus subdvisiones, también encontraremos el carrito de compras con su contador para el navBar.  |
+| Carpeta Context| Se encuenta base de datos por la cual partio el proyecto y su carpeta DataProvider que me ayudaba a desblegar la información creada a traves array de objetos. Actualmente el archivo DataProvider se alimenta de la base de datos creada por medio de FireBase para poder desplegar los componentes. |
+| Carpeta Routes | Dentro de la carpeta Routes encontraremos todas las rutas creadas para el sitio web y sus rutas establecidad por medio de react-Router-Dom. Además de la implementacion de los archivos ProductosList y ProductosDetalles, los cuales nos ayudan a visualizar la lista de productos y el detelle individual de cada uno si es que clicleamos el boton "Ver ficha" o si presionamos la imagen del producto.|
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

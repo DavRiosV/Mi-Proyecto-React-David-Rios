@@ -93,6 +93,36 @@
     font-family: Helvetica, sans-serif
     ;
 }
+.form input{
+    display: flex;
+    align-items: center;
+}
+.form label{
+    color: #ffffff;
+}
+.form textarea{
+    display: flex;
+    align-items: center;
+}
+.form button{
+    float: left;
+    width: 156px;
+    height: 32px;
+    background-color: darkred;
+    text-align: Center;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    line-height: 26px;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+.formMsj{
+    background-color: rgba(18, 189, 18, 0.637);
+    color: white;
+}
 
 
 /* -------------MEDIA -------------*/

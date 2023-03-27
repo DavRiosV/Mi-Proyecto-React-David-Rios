@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { DataContext } from "../context/DataProvider";
 import { IoMdClose, IoMdArrowDropup, IoMdArrowDropdown,IoIosTrash } from "react-icons/io";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 export const Cart = () => {
@@ -8,6 +9,7 @@ const value = useContext(DataContext);
 const [menu, setMenu] = value.menu;
 const [carrito, setCarrito] = value.carrito;
 const [total] = value.total;
+
 
 const tooglefalse = () => {
     setMenu(false);
@@ -56,10 +58,10 @@ return (
         <h2 className="tituloCarrito">Su Carrito</h2>
         <div className="carrito__center">
 					{
-					carrito.length === 0 ? <h2 style={{textAlign: "center", fontSize: "3rem"}}>Su carrito esta vacio</h2> :<>
+						carrito.length === 0 ? <h2 style={{textAlign: "center", fontSize: "3rem"}}>Su carrito esta vacio</h2> :<>
 					{
-					carrito.map((producto) => (
-            <div className="carrito__item" key={producto.id}>
+						carrito.map((producto) => (
+							<div className="carrito__item" key={producto.id}>
             <img src={producto.imagen} alt={producto.titulo} />
             <div>
                 <h3> {producto.titulo} </h3>
@@ -75,7 +77,7 @@ return (
 									onClick={() => reduce(producto.id)} 
 									className="arrow" 
 									type="solid" 
-								/>
+									/>
             </div>
 							<div 
 							onClick={() => removeProducto(producto.id)} 
@@ -93,7 +95,7 @@ return (
 
         <div className="carrito__footer">
         <h3>Total: ${total}</h3>
-        <button className="pay">PAGAR</button>
+        <button className="pay"><Link to={`/ContactFormEdit`} >PAGAR</Link>  </button>
         </div>
     </div>
     </div>

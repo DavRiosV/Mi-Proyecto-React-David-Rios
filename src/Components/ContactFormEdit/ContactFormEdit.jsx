@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import Carrito from '../Carrito';
+import "../productos/ProductosDetalles.css";
 
 const formBase = {
 name: '',
 email: '',
+cell: '',
+address:'',
+totalItem:'',
+priceToPay:'',
 message: '',
 };
 
 const ContactForm = () => {
 const [form, setForm] = useState(formBase);
-
 const [id, setId] = useState();
+const {carrito, totalCompra} = Carrito();
 
 const submitHandler = (ev) => {
     ev.preventDefault();
@@ -22,6 +28,11 @@ const submitHandler = (ev) => {
     setForm(formBase);
     setId(snapshot.id);
     });
+    const carritoForm = collection(db, 'orders');
+    addDoc(carritoForm, form).then((snapshot) => {
+        setForm(JSON.parse(localStorage.getItem('dataCarrito')))
+        setId(snapshot.id);
+        });
 };
 
 const inputChangeHandler = (ev) => {
@@ -31,9 +42,9 @@ const inputChangeHandler = (ev) => {
 };
 
 return (
-    <div>
+    <div className='form'>
     {typeof id !== 'undefined' ? (
-        <p>El formulario se ha enviado con el id: {id}</p>
+        <p className='formMsj'>Su compra a sido realizada con exito. El numero de su orden de compra es: {id}</p>
     ) : (
         ''
     )}
@@ -58,6 +69,26 @@ return (
         />
         </div>
         <div>
+        <label htmlFor="cell">Teléfono</label>
+        <input
+            type="cell"
+            name="cell"
+            id="cell"
+            value={form.cell}
+            onChange={inputChangeHandler}
+        />
+        </div>
+        <div>
+        <label htmlFor="address">Dirección de envío</label>
+        <input
+            type="address"
+            name="address"
+            id="address"
+            value={form.address}
+            onChange={inputChangeHandler}
+        />
+        </div>
+        <div>
         <label htmlFor="message">Mensaje</label>
         <textarea
             name="message"
@@ -66,7 +97,7 @@ return (
             onChange={inputChangeHandler}
         ></textarea>
         </div>
-        <button>Enviar</button>
+        <button className='btn'>Finalizar compra</button>
     </form>
     </div>
 );

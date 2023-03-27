@@ -11,7 +11,6 @@ const Home = () => {
     <div>
         <ProductosList/> 
     </div> 
-        <ContactForm/>
     </div>
         )
     ;

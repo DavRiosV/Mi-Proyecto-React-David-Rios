@@ -11,7 +11,6 @@ export const ProductosDetalles = () => {
   const addCarrito = value.addCarrito;
   const [detalle, setDetalle] = useState([])
   const [url, setUrl]= useState(0)
-  const [images, setImages] = useState('')
   const params = useParams();
   let item = 0;
 
@@ -24,13 +23,6 @@ export const ProductosDetalles = () => {
       }
     })
   },[params.id, productos])
-
-
-  useEffect(() =>{
-    const values = `${url}`;
-    setImages(values) 
-  },[url, params.id])
-  if(detalle.length < 1) return null;
 
   return (
     <>
@@ -59,7 +51,7 @@ export const ProductosDetalles = () => {
     <div className="productos">
       {
         productos.map((producto) => {
-          if((item < 6)&&(detalle.category === producto.category)){
+          if((item < 8)&&(detalle.category === producto.category)){
             item++;
           return <ProductoItem 
           key={producto.id}

@@ -1,7 +1,6 @@
 import React from 'react';
 import ImgProductos from './ImgProductos';
 import "./pokelist.css";
-import { Link } from "react-router-dom";
 import Buttons from '../Components/Buttons';
 
 const Pokelist = ({ pokelist }) => {

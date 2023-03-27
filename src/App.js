@@ -8,6 +8,7 @@ import Cartas from './Routes/Cartas';
 import Quienes from './Routes/Quien';
 import Nuestrosvalores from './Routes/Nuestrosvalores';
 import Layout from './Components/Layout';
+import ContactFormEdit from './Routes/ContactFormEdit';
 import { DataProvider } from './context/DataProvider';
 import { ProductosList } from './Routes/ProductosList';
 import { ProductosDetalles } from './Routes/ProductosDetalles';
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="cartas" element={<Cartas />} />
           <Route path="quienes-somos" element={<Quienes />} />
           <Route path="nuestro-valores" element={<Nuestrosvalores />} />
+          <Route path="ContactFormEdit" element={<ContactFormEdit/>} />
           <Route path="*" element={<p>¡Elemento no encontrado!</p>} />
         </Route>
       </Routes>

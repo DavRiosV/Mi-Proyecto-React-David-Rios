@@ -13,7 +13,7 @@ export const menuItems = [
             },
             {
             title: 'Video Juegos',
-            url: 'vgames',
+            url: 'vgames',                      
             },
             {
             title: 'Cartas TCG',
