@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, {useContext} from 'react';
 import { DataContext } from '../context/DataProvider';
 import { ProductoItem } from '../Components/productos/ProductoItem';
+import { Cart } from "../Carrito";
 
 const VGames = () => {
 
@@ -30,6 +31,7 @@ const VGames = () => {
 					))
 				}					
         </div>
+        <Cart/>
 				</>
     </div>
         )
