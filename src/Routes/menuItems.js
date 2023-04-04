@@ -12,7 +12,7 @@ export const menuItems = [
             url: 'Peluches',
             },
             {
-            title: 'Video Juegos',
+            title: 'Videojuegos',
             url: 'vgames',                      
             },
             {
