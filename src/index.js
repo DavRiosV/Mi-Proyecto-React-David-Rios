@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // ...
 import { BrowserRouter } from 'react-router-dom';
-import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
 // Import the functions you need from the SDKs you need

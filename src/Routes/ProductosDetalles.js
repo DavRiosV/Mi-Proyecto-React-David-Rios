@@ -10,12 +10,12 @@ export const ProductosDetalles = () => {
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;
   const [detalle, setDetalle] = useState([])
-  const [url, setUrl]= useState(0)
+  const [, setUrl]= useState(0)
   const params = useParams();
   let item = 0;
 
   useEffect(() =>{
-    item=0;
+    item = 0;
     productos.forEach(producto =>{
       if(producto.id === params.id){
         setDetalle(producto)
