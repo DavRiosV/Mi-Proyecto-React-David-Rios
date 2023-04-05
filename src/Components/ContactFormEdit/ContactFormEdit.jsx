@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import Carrito from '../Carrito';
 import "../productos/ProductosDetalles.css";
 
 const formBase = {
@@ -16,7 +15,6 @@ message: '',
 const ContactForm = () => {
 const [form, setForm] = useState(formBase);
 const [id, setId] = useState();
-const {carrito, totalCompra} = Carrito();
 
 const submitHandler = (ev) => {
     ev.preventDefault();
