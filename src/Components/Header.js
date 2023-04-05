@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import Carrito from './Carrito';
+import Carrito from '../Carrito/Carrito';
 
 const Header = () => {
 

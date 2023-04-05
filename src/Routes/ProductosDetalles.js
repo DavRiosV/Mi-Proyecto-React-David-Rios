@@ -3,7 +3,7 @@ import { DataContext } from '../context/DataProvider';
 import { useParams } from "react-router-dom";
 import { ProductoItem } from '../Components/productos/ProductoItem';
 import "../Components/productos/ProductosDetalles.css";
-import { Cart } from '../Carrito';
+import { Cart } from '../Carrito/Cart';
 
 export const ProductosDetalles = () => {
   const value = useContext(DataContext);

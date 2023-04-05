@@ -1,7 +1,6 @@
 
-import { Cart } from "../Carrito";
+import { Cart } from "../Carrito/Cart";
 import { ProductosList } from "../Routes/ProductosList";
-import ContactForm from "../Components/ContactFormEdit/ContactFormEdit";
 
 const Home = () => {
     return (
