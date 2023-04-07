@@ -16,7 +16,6 @@ export const ProductosDetalles = () => {
   
 
   useEffect(() =>{
-    item = 0;
     productos.forEach(producto =>{
       if(producto.id === params.id){
         setDetalle(producto)
@@ -62,6 +61,8 @@ export const ProductosDetalles = () => {
           precio={producto.precio}
           id={producto.id}
           />
+          } else{
+            return null
           }
         })
       }
