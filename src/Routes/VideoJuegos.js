@@ -11,7 +11,6 @@ const VGames = () => {
 	const data = productos.filter(producto =>{
 		return producto.categoryId === 2
 	})
-	console.log(JSON.stringify(productos))
     return (	
 		<div>
     <h2>Videojuegos</h2>;
